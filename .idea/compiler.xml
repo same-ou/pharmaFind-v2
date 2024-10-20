@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pharmacy-ms" />
+        <module name="order-ms" />
+        <module name="discovery" />
+        <module name="product-ms" />
+        <module name="payment-ms" />
+        <module name="config" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="order-ms" options="-parameters" />
+      <module name="payment-ms" options="-parameters" />
+      <module name="pharmacy-ms" options="-parameters" />
+      <module name="product-ms" options="-parameters" />
+    </option>
+  </component>
+</project>
